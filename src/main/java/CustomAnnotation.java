@@ -1,5 +1,5 @@
 
-
+// A simple way to define custom annotations.
 @interface Test2{
     String testVariable = "StringLiteralTestVariable";
 }

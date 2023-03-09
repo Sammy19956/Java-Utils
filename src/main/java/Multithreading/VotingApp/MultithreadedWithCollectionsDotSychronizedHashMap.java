@@ -25,5 +25,10 @@ public class MultithreadedWithCollectionsDotSychronizedHashMap {
         executor.shutdown();
 
         System.out.println(votes);
+
+        List<Integer>  list = Collections.synchronizedList(List.of(2, 3, 4,5,6));
+        Set<Integer> set= Collections.synchronizedSet(Set.of(55, 44, 33, 7, 3));
+        Map<Integer, Integer> map = Collections.synchronizedMap(Map.of(22, 3,55,12, 33, 66, 77, 44));
+        System.out.println(set.hashCode());
     }
 }
